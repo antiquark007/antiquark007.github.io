@@ -1,0 +1,24 @@
+{
+  "name": "antiquark007.github.io",
+  "version": "1.0.0",
+  "description": "Personal website for antiquark007 showcasing social media links and personal information.",
+  "main": "index.html",
+  "scripts": {
+    "build": "postcss css/styles.css -o css/output.css",
+    "watch": "postcss css/styles.css -o css/output.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^2.2.19",
+    "postcss": "^8.3.6",
+    "autoprefixer": "^10.3.7"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "personal",
+    "website",
+    "portfolio",
+    "social media"
+  ],
+  "author": "antiquark007",
+  "license": "MIT"
+}
