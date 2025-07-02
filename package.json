@@ -1,24 +1,42 @@
 {
   "name": "antiquark007.github.io",
-  "version": "1.0.0",
-  "description": "Personal website for antiquark007 showcasing social media links and personal information.",
+  "version": "2.0.0",
+  "description": "Modern portfolio website for Ved Prakash Singh showcasing full-stack development skills, defense forces background, and competitive programming achievements.",
   "main": "index.html",
   "scripts": {
     "build": "postcss css/styles.css -o css/output.css",
-    "watch": "postcss css/styles.css -o css/output.css --watch"
+    "watch": "postcss css/styles.css -o css/output.css --watch",
+    "dev": "live-server --port=3000",
+    "deploy": "gh-pages -d ."
   },
   "dependencies": {
-    "tailwindcss": "^2.2.19",
-    "postcss": "^8.3.6",
-    "autoprefixer": "^10.3.7"
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.24",
+    "autoprefixer": "^10.4.14",
+    "three": "^0.155.0",
+    "gsap": "^3.12.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "gh-pages": "^5.0.0",
+    "postcss-cli": "^10.1.0"
+  },
   "keywords": [
-    "personal",
-    "website",
     "portfolio",
-    "social media"
+    "full-stack-developer",
+    "defense-forces",
+    "competitive-programming",
+    "three.js",
+    "modern-web",
+    "codechef",
+    "codeforces",
+    "react",
+    "nodejs"
   ],
-  "author": "antiquark007",
-  "license": "MIT"
+  "author": "Ved Prakash Singh (antiquark007)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antiquark007/antiquark007.github.io"
+  }
 }
