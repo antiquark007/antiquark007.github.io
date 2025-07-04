@@ -37,12 +37,17 @@
     <div class="min-h-screen flex flex-col">
       <!-- Hero Section -->
       <section
-        class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-20"
+        class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-20 flex items-center min-h-[60vh] relative overflow-hidden"
+        id="hero-section"
       >
+        <!-- Cursor Glow Effect -->
+        <div id="hero-cursor-glow"></div>
         <div class="container mx-auto px-6 md:px-12 lg:px-24">
-          <div class="flex flex-col md:flex-row items-center">
-            <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-              <div class="rounded-full bg-white p-1 shadow-xl">
+          <div
+            class="flex flex-col md:flex-row items-center justify-center gap-12"
+          >
+            <div class="md:w-1/3 flex justify-center mb-8 md:mb-0">
+              <div class="rounded-full bg-white p-1 shadow-2xl border-2">
                 <img
                   src="assets/images/profile.jpg"
                   alt="Profile Picture"
@@ -50,12 +55,16 @@
                 />
               </div>
             </div>
-            <div class="md:w-2/3 md:pl-12">
-              <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            <div
+              class="md:w-2/3 flex flex-col items-center md:items-start text-center md:text-left"
+            >
+              <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
                 ved prakash singh
               </h1>
-              <div class="w-24 h-1 bg-blue-500 mb-6"></div>
-              <div class="flex flex-wrap items-center gap-4">
+              <div class="w-24 h-1 bg-blue-500 mb-6 mx-auto md:mx-0"></div>
+              <div
+                class="flex flex-wrap items-center gap-4 mb-6 justify-center md:justify-start"
+              >
                 <a
                   href="#connect"
                   class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1"
@@ -68,16 +77,47 @@
                   <i class="far fa-envelope mr-2"></i> vedp5585@gmail.com
                 </a>
               </div>
-                              <div class="flex flex-col sm:flex-row gap-4 justify-center reveal stagger-4">
-                    <a href="#projects" class="btn-primary">View Projects</a>
-                    <a href="assets/pdf/ved_prakash_singh_resume.pdf" class="btn-secondary" target="_blank">Download Resume</a>
-                    <a href="pages/project.html" class="btn-primary bg-green-600 hover:bg-green-700">My Project Page</a>
-                </div>
+              <div
+                class="flex flex-col sm:flex-row gap-4 w-full justify-center md:justify-start"
+              >
+                <a
+                  href="assets/pdf/ved_prakash_singh_resume.pdf"
+                  class="inline-block bg-blue-900/80 hover:bg-blue-900 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1"
+                  target="_blank"
+                  >Download Resume</a
+                >
+
+                <a
+                  href="pages/project.html"
+                  class="inline-block bg-blue-900/80 hover:bg-blue-900 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1"
+                  >My Project Page</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- About Me Section -->
+      <section id="about-me" class="py-16 bg-white">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+          <div
+            class="bg-white/90 backdrop-blur-lg rounded-3xl shadow-2xl p-10 md:p-16 max-w-4xl mx-auto flex flex-col items-center reveal stagger-1"
+          >
+            <p
+              class="text-base md:text-lg text-gray-700 text-center mb-0 leading-relaxed reveal stagger-2 max-w-3xl"
+            >
+              I am Ved Prakash Singh, a backend-focused full-stack developer. I
+              design and build scalable APIs, optimize databases, and deliver
+              reliable integrations.Besides this I also like to contribute to
+              open souce and do contest on the coding platforms I love the
+              process of continuous learning and implementing the technologies.I
+              am looking forward for role in full-stack devloper or software
+              developer inter.
+            </p>
+          </div>
+        </div>
+      </section>
       <!-- Connect Section -->
       <section id="connect" class="py-16 bg-gray-50">
         <div class="container mx-auto px-6 md:px-12 lg:px-24">
@@ -161,6 +201,7 @@
                 <span class="font-medium">Email</span>
               </div>
             </a>
+
             <a href="https://github.com/antiquark007" class="group">
               <div
                 class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:transform hover:scale-105"
@@ -171,10 +212,81 @@
                 <span class="font-medium">GitHub</span>
               </div>
             </a>
+
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/antiquark007" class="group">
+              <div
+                class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:transform hover:scale-105"
+              >
+                <div
+                  class="w-8 h-8 mb-3 group-hover:scale-110 transition-transform duration-200"
+                >
+                  <img
+                    src="https://leetcode.com/favicon.ico"
+                    alt="LeetCode"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="font-medium">LeetCode</span>
+              </div>
+            </a>
+            <!-- Codeforces -->
+            <a href="https://codeforces.com/profile/antiquark007" class="group">
+              <div
+                class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:transform hover:scale-105"
+              >
+                <div
+                  class="w-8 h-8 mb-3 group-hover:scale-110 transition-transform duration-200"
+                >
+                  <img
+                    src="https://cdn-1.webcatalog.io/catalog/codeforces/codeforces-icon-filled-256.webp?v=1714773964567"
+                    alt="Codeforces"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="font-medium">Codeforces</span>
+              </div>
+            </a>
+
+            <!-- CodeChef -->
+            <a href="https://www.codechef.com/users/antiquark007" class="group">
+              <div
+                class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:transform hover:scale-105"
+              >
+                <div
+                  class="w-8 h-8 mb-3 group-hover:scale-110 transition-transform duration-200"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/0/08/CodeChef_Logo.svg"
+                    alt="CodeChef"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="font-medium">CodeChef</span>
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
+      <!-- Medium Articles Section -->
+      <section id="medium-articles" class="py-16 bg-white">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+          <h2 class="section-title mb-8">Latest Medium Articles</h2>
+          <div
+            id="medium-articles-list"
+            class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          ></div>
+          <div class="text-center mt-8">
+            <a
+              href="https://medium.com/@antiquark007"
+              target="_blank"
+              class="btn-primary"
+              >View All on Medium</a
+            >
+          </div>
+        </div>
+      </section>
       <!-- Footer -->
       <footer class="bg-gray-900 text-white py-12 mt-auto">
         <div class="container mx-auto px-6 md:px-12 lg:px-24">
