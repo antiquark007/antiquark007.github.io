@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "VED PRAKASH SINGH",
+  "version": "1.0",
+  "description": "Personal site packaged as a Chrome extension.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "assets/images/profile.jpg",
+      "48":"assets/images/profile.jpg",
+      "128":"assets/images/profile.jpg"
+    }
+  }
+}
