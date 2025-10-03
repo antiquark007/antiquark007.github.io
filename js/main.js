@@ -70,4 +70,3 @@ if (heroSection && glow) {
     glow.style.opacity = "0";
   });
 }
-
